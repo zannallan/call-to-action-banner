@@ -1,19 +1,19 @@
 repo: "call-to-action-banner"
 canvasCourse: "web-dev-1"
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - google-fonts
+  - box-sizing
+  - body-margin-0
+  - img-flex
 
 html:
   - path: "index.html"
-    valid: true
-    bestPractices: true
+    outline: false
     has:
       - ['link[href*="Roboto"]', 'The Google Font, `Roboto` (regular & bold) is missing']
       - ['link[href*="Roboto+Condensed"]', 'The Google Font, `Roboto Condensed` (bold) is missing']
@@ -29,14 +29,7 @@ html:
 
 css:
   - path: "css/main.css"
-    valid: true
-    bestPractices: true
     has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['*', 'box-sizing', 'inherit']
-      - ['body', 'margin', 0]
-      - ['.img-flex', 'display', 'block']
-      - ['.img-flex', 'width', '100%']
       - ['.banner']
       - ['.btn']
       - ['.btn:hover']
@@ -56,4 +49,17 @@ css:
 
 screenshots:
   - path: "index.html"
-    sizes: [650, 1400]
+    sizes:
+      650: 10
+      1400: 5
+
+functionality:
+  - path: 'index.html'
+    test: |
+      const btn = $('.btn')
+      const oldBg = css(btn).backgroundColor;
+
+      hover(btn, () => {
+        if(oldBg == css(btn).backgroundColor) return fail('The background colour of the button doesn’t change when hovered');
+        pass();
+      });
