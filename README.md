@@ -22,6 +22,7 @@ deliverables: '1 HTML file, 1 CSS file, images'
 - *Text sizes:* `3rem`, `1.5rem`
 - *Expected class names:* `.banner`, `.img-flex`, `.btn`, `.btn-big`
 - *Banner maximum height:* `500px`
+- *Banner content maximum width:* `45em`
 
 ---
 
