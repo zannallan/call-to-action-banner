@@ -39,8 +39,10 @@ css:
       - "Roboto Condensed"
       - "position: relative"
       - "position: absolute"
-      - "float: left"
-      - "float: right"
+      - "display: flex"
+      - "flex-direction: row"
+      - 'justify-content:'
+      - 'align-items:'
       - "left:"
       - "top:"
       - "translate"
