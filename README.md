@@ -1,5 +1,5 @@
 ---
-summary: 'Use CSS position along with float to create a call to action banner.'
+summary: 'Use CSS position along with Flexbox to create a call to action banner.'
 time: '1 hour'
 deliverables: '1 HTML file, 1 CSS file, images'
 ---
@@ -9,7 +9,7 @@ deliverables: '1 HTML file, 1 CSS file, images'
 ## Overview
 
 - *Fork this repository.*
-- Use a combination of `position` and `float` to create the call to action banner.
+- Use a combination of `position` and Flexbox to create the call to action banner.
 - The button is `.btn-big` from the button assignment.
 - Text can be found inside the `content.txt` file.
 - *Run it through Markbot and make sure it passes all the checks.*
