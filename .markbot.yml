@@ -40,7 +40,6 @@ css:
       - "position: relative"
       - "position: absolute"
       - "display: flex"
-      - "flex-direction: row"
       - 'justify-content:'
       - 'align-items:'
       - "left:"
