@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+.image {
+  width: 400px;
+}
+
 .main-box {
   max-height: 500px;
   position: relative;
@@ -25,11 +29,11 @@ body {
 
 .wrap {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
   position: absolute;
   max-height: 500px;
-  max-width: 50em;
+  max-width: 45em;
   width: 100%;
   left: 50%;
   top: 50%;
@@ -48,21 +52,11 @@ h2 {
 p {
   font-family: Roboto, sans-serif;
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: .5rem 0 1rem;
 }
 
 .banner {
-  padding: 1rem;
-  width: 50%;
-}
-
-.text {
-  width: 75%;
-  padding-right: .5rem;
-}
-
-.image {
-  max-width: 280px;
+  padding: 1.5rem;
 }
 
 .btn {
@@ -71,7 +65,7 @@ p {
   padding: .55rem .85em;
   border-radius: 8px;
   font-family: Roboto, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   font-size: 1.275rem;
   background-color: #333;
