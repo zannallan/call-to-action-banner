@@ -25,6 +25,8 @@ body {
 
 .wrap {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
   position: absolute;
   max-height: 500px;
   max-width: 50em;
@@ -37,28 +39,30 @@ body {
 h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
-  line-height: 1.4;
-  max-width: 80%;
+  line-height: 1.2;
+  max-width: 76%;
   margin: 0;
   font-size: 3rem;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.5rem;
-  margin: 1rem 0 1rem;
+  margin: 1rem 0;
 }
 
 .banner {
-  padding: 1.5rem;
+  padding: 1rem;
   width: 50%;
 }
 
 .text {
-  width: 70%;
+  width: 75%;
+  padding-right: .5rem;
 }
+
 .image {
-  max-width: 300px;
+  max-width: 280px;
 }
 
 .btn {
@@ -66,11 +70,15 @@ p {
   display: inline-block;
   padding: .55rem .85em;
   border-radius: 8px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.275rem;
   background-color: #333;
+}
+
+.btn-big {
+  font-size: 1.5rem;
 }
 
 .btn:hover {
