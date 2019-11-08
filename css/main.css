@@ -26,7 +26,6 @@ body {
 .wrap {
   display: flex;
   position: absolute;
-  padding: 1rem;
   max-height: 500px;
   max-width: 50em;
   width: 100%;
@@ -58,6 +57,9 @@ p {
 .text {
   width: 70%;
 }
+.image {
+  max-width: 300px;
+}
 
 .btn {
   text-decoration: none;
@@ -69,4 +71,9 @@ p {
   color: #fff;
   font-size: 1.5rem;
   background-color: #333;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #000;
 }
